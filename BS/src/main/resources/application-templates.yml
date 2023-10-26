@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates
+    suffix: .html
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://sh-cynosdbmysql-grp-0vvwpu7o.sql.tencentcdb.com:26710/db_address_book?Timezone=UTC&Unicode=true&characterEnconding=utf-8
+    username: USERNAME
+    password: PASSWORD
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+
+server:
+  tomcat:
+    max-http-header-size: 81920
